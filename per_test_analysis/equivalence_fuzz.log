@@ -1,0 +1,18 @@
+mutant | slugify diffs | smart_truncate diffs | cli diffs
+_legacy.x_smart_truncate__mutmut_17 | 0 | 0 | 0
+_legacy.x_slugify__mutmut_23 | 0 | 0 | 0
+_legacy.x_slugify__mutmut_166 | 0 | 0 | 0
+slugify.x__modern_truncate__mutmut_38 | 0 | 0 | 0
+slugify.x__modern_truncate__mutmut_77 | 0 | 0 | 0
+slugify.x__modern_slugify__mutmut_18 | 0 | 0 | 0
+slugify.x__modern_slugify__mutmut_96 | 0 | 0 | 0
+slugify.x__modern_slugify__mutmut_118 | 0 | 0 | 0
+__main__.x_parse_args__mutmut_44 | 0 | 0 | 0
+__main__.x_parse_args__mutmut_64 | 0 | 0 | 0
+__main__.x_parse_args__mutmut_84 | 0 | 0 | 0
+__main__.x_parse_args__mutmut_116 | 0 | 0 | 0
+__main__.x_parse_args__mutmut_132 | 0 | 0 | 0
+__main__.x_parse_args__mutmut_143 | 0 | 0 | 0
+__main__.x_parse_args__mutmut_147 | 0 | 0 | 0
+__main__.x_parse_args__mutmut_185 | 0 | 0 | 0
+__main__.x_parse_args__mutmut_212 | 0 | 0 | 0

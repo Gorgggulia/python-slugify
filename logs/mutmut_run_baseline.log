@@ -1,0 +1,7 @@
+/home/claude/lab/venv/lib/python3.12/site-packages/mutmut/configuration.py:143: UserWarning: The config paths_to_mutate is deprecated. Please rename it to source_paths
+  warnings.warn("The config paths_to_mutate is deprecated. Please rename it to source_paths")
+/home/claude/lab/venv/lib/python3.12/site-packages/mutmut/configuration.py:152: UserWarning: The config tests_dir is deprecated. Please add the path to pytest_add_cli_args_test_selection instead
+...
+⠸ 1070/1073  🎉 895 🫥 0  ⏰ 0  🤔 0  🙁 175  🔇 0  🧙 0
+⠼ 1073/1073  🎉 898 🫥 0  ⏰ 0  🤔 0  🙁 175  🔇 0  🧙 0
+10.51 mutations/second

@@ -1,0 +1,17 @@
+slugify._legacy.x_smart_truncate__mutmut_17
+slugify._legacy.x_slugify__mutmut_23
+slugify._legacy.x_slugify__mutmut_166
+slugify.slugify.x__modern_truncate__mutmut_38
+slugify.slugify.x__modern_truncate__mutmut_77
+slugify.slugify.x__modern_slugify__mutmut_18
+slugify.slugify.x__modern_slugify__mutmut_96
+slugify.slugify.x__modern_slugify__mutmut_118
+slugify.__main__.x_parse_args__mutmut_44
+slugify.__main__.x_parse_args__mutmut_64
+slugify.__main__.x_parse_args__mutmut_84
+slugify.__main__.x_parse_args__mutmut_116
+slugify.__main__.x_parse_args__mutmut_132
+slugify.__main__.x_parse_args__mutmut_143
+slugify.__main__.x_parse_args__mutmut_147
+slugify.__main__.x_parse_args__mutmut_185
+slugify.__main__.x_parse_args__mutmut_212

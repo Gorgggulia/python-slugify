@@ -1,0 +1,7 @@
+mutant | slugify diffs | smart_truncate diffs | cli diffs
+slugify.x__numeric_reference__mutmut_11 | 153 | 0 | 0
+    DIFF (('&#57344;&amp;Å', {'max_length': 0, 'word_boundary': False, 'save_order': True, 'separator': '-', 'lowercase': False, 'allow_unicode': True, 'stopwords': ('a',), 'replacements': (), 'replacement_stage': 'both', 'backend': 'anyascii', 'algorithm': '
+_legacy.x_slugify__mutmut_152 | 6 | 0 | 0
+    DIFF (('--X#01,000', {'max_length': 0, 'word_boundary': False, 'save_order': False, 'separator': '+x', 'lowercase': True, 'allow_unicode': False, 'stopwords': ('a',), 'replacements': [('x', '-y-')], 'replacement_stage': 'both', 'backend': 'unidecode', 'alg
+slugify.x__modern_slugify__mutmut_114 | 182 | 0 | 0
+    DIFF (('ö1,000🙂;Щ_Щ\'1é"1,000', {'max_length': 12, 'word_boundary': False, 'save_order': False, 'separator': '-', 'lowercase': False, 'allow_unicode': False, 'stopwords': ('a',), 'replacements': [('a', 'b')], 'replacement_stage': 'both', 'backend': 

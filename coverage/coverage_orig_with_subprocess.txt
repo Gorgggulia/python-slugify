@@ -1,0 +1,7 @@
+Name                 Stmts   Miss Branch BrPart  Cover   Missing
+----------------------------------------------------------------
+slugify/_legacy.py     103      1     56      2    98%   60, 91->90
+----------------------------------------------------------------
+TOTAL                  335      1    152      2    99%
+
+5 files skipped due to complete coverage.

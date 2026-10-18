@@ -1,0 +1,533 @@
+##### slugify.special.x_add_uppercase_char__mutmut_5
+-        if upper_dict not in char_list and char != upper_dict[0]:
++        if upper_dict not in char_list or char != upper_dict[0]:
+##### slugify.special.x_add_uppercase_char__mutmut_8
+-        if upper_dict not in char_list and char != upper_dict[0]:
++        if upper_dict not in char_list and char != upper_dict[1]:
+##### slugify._legacy.x__transliterate__mutmut_8
+-            if error.name != 'unidecode':
++            if error.name == 'unidecode':
+##### slugify._legacy.x__transliterate__mutmut_9
+-            if error.name != 'unidecode':
++            if error.name != 'XXunidecodeXX':
+##### slugify._legacy.x__transliterate__mutmut_10
+-            if error.name != 'unidecode':
++            if error.name != 'UNIDECODE':
+##### slugify._legacy.x__transliterate__mutmut_11
+-            module = import_module('text_unidecode')
++            module = None
+##### slugify._legacy.x__transliterate__mutmut_12
+-            module = import_module('text_unidecode')
++            module = import_module(None)
+##### slugify._legacy.x__transliterate__mutmut_13
+-            module = import_module('text_unidecode')
++            module = import_module('XXtext_unidecodeXX')
+##### slugify._legacy.x__transliterate__mutmut_14
+-            module = import_module('text_unidecode')
++            module = import_module('TEXT_UNIDECODE')
+##### slugify._legacy.x__transliterate__mutmut_29
+-    result: str = getattr(module, 'anyascii' if backend == 'anyascii' else 'unidecode')(text)
++    result: str = getattr(module, 'anyascii' if (backend == 'anyascii') and False else 'unidecode')(text)
+##### slugify._legacy.x__transliterate__mutmut_31
+-    result: str = getattr(module, 'anyascii' if backend == 'anyascii' else 'unidecode')(text)
++    result: str = getattr(module, 'XXanyasciiXX' if backend == 'anyascii' else 'unidecode')(text)
+##### slugify._legacy.x__transliterate__mutmut_32
+-    result: str = getattr(module, 'anyascii' if backend == 'anyascii' else 'unidecode')(text)
++    result: str = getattr(module, 'ANYASCII' if backend == 'anyascii' else 'unidecode')(text)
+##### slugify._legacy.x__transliterate__mutmut_34
+-    result: str = getattr(module, 'anyascii' if backend == 'anyascii' else 'unidecode')(text)
++    result: str = getattr(module, 'anyascii' if backend == 'XXanyasciiXX' else 'unidecode')(text)
+##### slugify._legacy.x__transliterate__mutmut_35
+-    result: str = getattr(module, 'anyascii' if backend == 'anyascii' else 'unidecode')(text)
++    result: str = getattr(module, 'anyascii' if backend == 'ANYASCII' else 'unidecode')(text)
+##### slugify._legacy.x_smart_truncate__mutmut_2
+-    word_boundary: bool = False,
++    word_boundary: bool = True,
+##### slugify._legacy.x_smart_truncate__mutmut_17
+-            if next_len < max_length:
++            if next_len <= max_length:
+##### slugify._legacy.x_slugify__mutmut_1
+-    entities: bool = True,
++    entities: bool = False,
+##### slugify._legacy.x_slugify__mutmut_2
+-    decimal: bool = True,
++    decimal: bool = False,
+##### slugify._legacy.x_slugify__mutmut_3
+-    hexadecimal: bool = True,
++    hexadecimal: bool = False,
+##### slugify._legacy.x_slugify__mutmut_4
+-    max_length: int = 0,
++    max_length: int = 1,
+##### slugify._legacy.x_slugify__mutmut_5
+-    word_boundary: bool = False,
++    word_boundary: bool = True,
+##### slugify._legacy.x_slugify__mutmut_6
+-    save_order: bool = False,
++    save_order: bool = True,
+##### slugify._legacy.x_slugify__mutmut_7
+-    lowercase: bool = True,
++    lowercase: bool = False,
+##### slugify._legacy.x_slugify__mutmut_8
+-    allow_unicode: bool = False,
++    allow_unicode: bool = True,
+##### slugify._legacy.x_slugify__mutmut_9
+-    replacement_stage: ReplacementStage = 'both',
++    replacement_stage: ReplacementStage = 'XXbothXX',
+##### slugify._legacy.x_slugify__mutmut_10
+-    replacement_stage: ReplacementStage = 'both',
++    replacement_stage: ReplacementStage = 'BOTH',
+##### slugify._legacy.x_slugify__mutmut_11
+-    backend: Backend = 'auto',
++    backend: Backend = 'XXautoXX',
+##### slugify._legacy.x_slugify__mutmut_12
+-    backend: Backend = 'auto',
++    backend: Backend = 'AUTO',
+##### slugify._legacy.x_slugify__mutmut_16
+-            raise TypeError(f'text must be str, bytes or bytearray, not {type(text).__name__}')
++            raise TypeError(f'text must be str, bytes or bytearray, not {type(None).__name__}')
+##### slugify._legacy.x_slugify__mutmut_21
+-        text = text.decode('utf-8', 'ignore')
++        text = text.decode('utf-8', )
+##### slugify._legacy.x_slugify__mutmut_23
+-        text = text.decode('utf-8', 'ignore')
++        text = text.decode('UTF-8', 'ignore')
+##### slugify._legacy.x_slugify__mutmut_24
+-        text = text.decode('utf-8', 'ignore')
++        text = text.decode('utf-8', 'XXignoreXX')
+##### slugify._legacy.x_slugify__mutmut_25
+-        text = text.decode('utf-8', 'ignore')
++        text = text.decode('utf-8', 'IGNORE')
+##### slugify._legacy.x_slugify__mutmut_31
+-    if replacement_stage not in ('both', 'pre', 'post'):
++    if replacement_stage not in ('both', 'pre', 'XXpostXX'):
+##### slugify._legacy.x_slugify__mutmut_32
+-    if replacement_stage not in ('both', 'pre', 'post'):
++    if replacement_stage not in ('both', 'pre', 'POST'):
+##### slugify._legacy.x_slugify__mutmut_33
+-        raise ValueError("replacement_stage must be 'both', 'pre' or 'post'")
++        raise ValueError(None)
+##### slugify._legacy.x_slugify__mutmut_34
+-        raise ValueError("replacement_stage must be 'both', 'pre' or 'post'")
++        raise ValueError("XXreplacement_stage must be 'both', 'pre' or 'post'XX")
+##### slugify._legacy.x_slugify__mutmut_35
+-        raise ValueError("replacement_stage must be 'both', 'pre' or 'post'")
++        raise ValueError("REPLACEMENT_STAGE MUST BE 'BOTH', 'PRE' OR 'POST'")
+##### slugify._legacy.x_slugify__mutmut_46
+-        raise ValueError("backend must be 'auto', 'text-unidecode', 'unidecode' or 'anyascii'")
++        raise ValueError("XXbackend must be 'auto', 'text-unidecode', 'unidecode' or 'anyascii'XX")
+##### slugify._legacy.x_slugify__mutmut_145
+-    if replacements and replacement_stage in ('both', 'post'):
++    if replacements and replacement_stage in ('both', 'XXpostXX'):
+##### slugify._legacy.x_slugify__mutmut_146
+-    if replacements and replacement_stage in ('both', 'post'):
++    if replacements and replacement_stage in ('both', 'POST'):
+##### slugify._legacy.x_slugify__mutmut_152
+-    if max_length > 0:
++    if max_length >= 0:
+##### slugify._legacy.x_slugify__mutmut_166
+-    return text.replace(DEFAULT_SEPARATOR, separator) if separator != DEFAULT_SEPARATOR else text
++    return text.replace(DEFAULT_SEPARATOR, separator) if (separator != DEFAULT_SEPARATOR) or True else text
+##### slugify.slugify.x__numeric_reference__mutmut_11
+-        if 0xD800 <= value <= 0xDFFF:
++        if 0xD800 <= value <= 57344:
+##### slugify.slugify.x__modern_truncate__mutmut_38
+-            first_word = False
++            first_word = None
+##### slugify.slugify.x__modern_truncate__mutmut_60
+-        delimiter = separator * (index - previous_index)
++        delimiter = separator * (index + previous_index)
+##### slugify.slugify.x__modern_truncate__mutmut_77
+-        if len(word) > remaining:
++        if len(word) >= remaining:
+##### slugify.slugify.x__modern_slugify__mutmut_3
+-        raise TypeError(f"max_length must be an int, not {type(max_length).__name__}")
++        raise TypeError(None)
+##### slugify.slugify.x__modern_slugify__mutmut_4
+-        raise TypeError(f"max_length must be an int, not {type(max_length).__name__}")
++        raise TypeError(f"max_length must be an int, not {type(None).__name__}")
+##### slugify.slugify.x__modern_slugify__mutmut_6
+-        raise TypeError(f"separator must be str, not {type(separator).__name__}")
++        raise TypeError(None)
+##### slugify.slugify.x__modern_slugify__mutmut_7
+-        raise TypeError(f"separator must be str, not {type(separator).__name__}")
++        raise TypeError(f"separator must be str, not {type(None).__name__}")
+##### slugify.slugify.x__modern_slugify__mutmut_11
+-            raise TypeError(f'text must be str, bytes or bytearray, not {type(text).__name__}')
++            raise TypeError(f'text must be str, bytes or bytearray, not {type(None).__name__}')
+##### slugify.slugify.x__modern_slugify__mutmut_18
+-        text = text.decode('utf-8', 'ignore')
++        text = text.decode('UTF-8', 'ignore')
+##### slugify.slugify.x__modern_slugify__mutmut_29
+-        raise ValueError("replacement_stage must be 'both', 'pre' or 'post'")
++        raise ValueError("XXreplacement_stage must be 'both', 'pre' or 'post'XX")
+##### slugify.slugify.x__modern_slugify__mutmut_41
+-        raise ValueError("backend must be 'auto', 'text-unidecode', 'unidecode' or 'anyascii'")
++        raise ValueError("XXbackend must be 'auto', 'text-unidecode', 'unidecode' or 'anyascii'XX")
+##### slugify.slugify.x__modern_slugify__mutmut_45
+-    rules = tuple((old, new) for old, new in replacements) if replacements else ()
++    rules = tuple((old, new) for old, new in replacements) if (replacements) or True else ()
+##### slugify.slugify.x__modern_slugify__mutmut_96
+-    text = unicodedata.normalize('NFKC' if allow_unicode else 'NFKD', text)
++    text = unicodedata.normalize('NFKC' if (allow_unicode) or True else 'NFKD', text)
+##### slugify.slugify.x__modern_slugify__mutmut_114
+-    text = NUMBERS_PATTERN.sub('', text)
++    text = NUMBERS_PATTERN.sub('XXXX', text)
+##### slugify.slugify.x__modern_slugify__mutmut_118
+-    pattern = regex_pattern or (DISALLOWED_UNICODE_CHARS_PATTERN if allow_unicode else DISALLOWED_CHARS_PATTERN)
++    pattern = regex_pattern or (DISALLOWED_UNICODE_CHARS_PATTERN if (allow_unicode) or True else DISALLOWED_CHARS_PATTERN)
+##### slugify.slugify.x_slugify__mutmut_20
+-        raise ValueError("algorithm must be 'legacy' or 'modern'")
++        raise ValueError(None)
+##### slugify.slugify.x_slugify__mutmut_21
+-        raise ValueError("algorithm must be 'legacy' or 'modern'")
++        raise ValueError("XXalgorithm must be 'legacy' or 'modern'XX")
+##### slugify.slugify.x_slugify__mutmut_22
+-        raise ValueError("algorithm must be 'legacy' or 'modern'")
++        raise ValueError("ALGORITHM MUST BE 'LEGACY' OR 'MODERN'")
+##### slugify.slugify.x_slugify__mutmut_65
+-        separator, save_order, stopwords, regex_pattern, lowercase,
++        separator, save_order, stopwords, None, lowercase,
+##### slugify.__main__.x_parse_args__mutmut_2
+-    parser = argparse.ArgumentParser(description="Slug string")
++    parser = argparse.ArgumentParser(description=None)
+##### slugify.__main__.x_parse_args__mutmut_3
+-    parser = argparse.ArgumentParser(description="Slug string")
++    parser = argparse.ArgumentParser(description="XXSlug stringXX")
+##### slugify.__main__.x_parse_args__mutmut_4
+-    parser = argparse.ArgumentParser(description="Slug string")
++    parser = argparse.ArgumentParser(description="slug string")
+##### slugify.__main__.x_parse_args__mutmut_5
+-    parser = argparse.ArgumentParser(description="Slug string")
++    parser = argparse.ArgumentParser(description="SLUG STRING")
+##### slugify.__main__.x_parse_args__mutmut_7
+-    input_group = parser.add_argument_group(description="Input")
++    input_group = parser.add_argument_group(description=None)
+##### slugify.__main__.x_parse_args__mutmut_8
+-    input_group = parser.add_argument_group(description="Input")
++    input_group = parser.add_argument_group(description="XXInputXX")
+##### slugify.__main__.x_parse_args__mutmut_9
+-    input_group = parser.add_argument_group(description="Input")
++    input_group = parser.add_argument_group(description="input")
+##### slugify.__main__.x_parse_args__mutmut_10
+-    input_group = parser.add_argument_group(description="Input")
++    input_group = parser.add_argument_group(description="INPUT")
+##### slugify.__main__.x_parse_args__mutmut_13
+-                             help='Text to slugify')
++                             help=None)
+##### slugify.__main__.x_parse_args__mutmut_16
+-                             help='Text to slugify')
++                             )
+##### slugify.__main__.x_parse_args__mutmut_20
+-                             help='Text to slugify')
++                             help='XXText to slugifyXX')
+##### slugify.__main__.x_parse_args__mutmut_21
+-                             help='Text to slugify')
++                             help='text to slugify')
+##### slugify.__main__.x_parse_args__mutmut_22
+-                             help='Text to slugify')
++                             help='TEXT TO SLUGIFY')
+##### slugify.__main__.x_parse_args__mutmut_25
+-                             help="Take the text from STDIN")
++                             help=None)
+##### slugify.__main__.x_parse_args__mutmut_28
+-                             help="Take the text from STDIN")
++                             )
+##### slugify.__main__.x_parse_args__mutmut_33
+-                             help="Take the text from STDIN")
++                             help="XXTake the text from STDINXX")
+##### slugify.__main__.x_parse_args__mutmut_34
+-                             help="Take the text from STDIN")
++                             help="take the text from stdin")
+##### slugify.__main__.x_parse_args__mutmut_35
+-                             help="Take the text from STDIN")
++                             help="TAKE THE TEXT FROM STDIN")
+##### slugify.__main__.x_parse_args__mutmut_40
+-                        help="Do not convert HTML entities to unicode")
++                        help=None)
+##### slugify.__main__.x_parse_args__mutmut_44
+-    parser.add_argument("--no-entities", action='store_false', dest='entities', default=True,
+-                        help="Do not convert HTML entities to unicode")
++    parser.add_argument("--no-entities", action='store_false', dest='entities', help="Do not convert HTML entities to unicode")
+##### slugify.__main__.x_parse_args__mutmut_45
+-                        help="Do not convert HTML entities to unicode")
++                        )
+##### slugify.__main__.x_parse_args__mutmut_53
+-                        help="Do not convert HTML entities to unicode")
++                        help="XXDo not convert HTML entities to unicodeXX")
+##### slugify.__main__.x_parse_args__mutmut_54
+-                        help="Do not convert HTML entities to unicode")
++                        help="do not convert html entities to unicode")
+##### slugify.__main__.x_parse_args__mutmut_55
+-                        help="Do not convert HTML entities to unicode")
++                        help="DO NOT CONVERT HTML ENTITIES TO UNICODE")
+##### slugify.__main__.x_parse_args__mutmut_60
+-                        help="Do not convert HTML decimal to unicode")
++                        help=None)
+##### slugify.__main__.x_parse_args__mutmut_64
+-    parser.add_argument("--no-decimal", action='store_false', dest='decimal', default=True,
+-                        help="Do not convert HTML decimal to unicode")
++    parser.add_argument("--no-decimal", action='store_false', dest='decimal', help="Do not convert HTML decimal to unicode")
+##### slugify.__main__.x_parse_args__mutmut_65
+-                        help="Do not convert HTML decimal to unicode")
++                        )
+##### slugify.__main__.x_parse_args__mutmut_73
+-                        help="Do not convert HTML decimal to unicode")
++                        help="XXDo not convert HTML decimal to unicodeXX")
+##### slugify.__main__.x_parse_args__mutmut_74
+-                        help="Do not convert HTML decimal to unicode")
++                        help="do not convert html decimal to unicode")
+##### slugify.__main__.x_parse_args__mutmut_75
+-                        help="Do not convert HTML decimal to unicode")
++                        help="DO NOT CONVERT HTML DECIMAL TO UNICODE")
+##### slugify.__main__.x_parse_args__mutmut_80
+-                        help="Do not convert HTML hexadecimal to unicode")
++                        help=None)
+##### slugify.__main__.x_parse_args__mutmut_84
+-    parser.add_argument("--no-hexadecimal", action='store_false', dest='hexadecimal', default=True,
+-                        help="Do not convert HTML hexadecimal to unicode")
++    parser.add_argument("--no-hexadecimal", action='store_false', dest='hexadecimal', help="Do not convert HTML hexadecimal to unicode")
+##### slugify.__main__.x_parse_args__mutmut_85
+-                        help="Do not convert HTML hexadecimal to unicode")
++                        )
+##### slugify.__main__.x_parse_args__mutmut_93
+-                        help="Do not convert HTML hexadecimal to unicode")
++                        help="XXDo not convert HTML hexadecimal to unicodeXX")
+##### slugify.__main__.x_parse_args__mutmut_94
+-                        help="Do not convert HTML hexadecimal to unicode")
++                        help="do not convert html hexadecimal to unicode")
+##### slugify.__main__.x_parse_args__mutmut_95
+-                        help="Do not convert HTML hexadecimal to unicode")
++                        help="DO NOT CONVERT HTML HEXADECIMAL TO UNICODE")
+##### slugify.__main__.x_parse_args__mutmut_99
+-                        help="Output string length, 0 for no limit")
++                        help=None)
+##### slugify.__main__.x_parse_args__mutmut_103
+-                        help="Output string length, 0 for no limit")
++                        )
+##### slugify.__main__.x_parse_args__mutmut_107
+-                        help="Output string length, 0 for no limit")
++                        help="XXOutput string length, 0 for no limitXX")
+##### slugify.__main__.x_parse_args__mutmut_108
+-                        help="Output string length, 0 for no limit")
++                        help="output string length, 0 for no limit")
+##### slugify.__main__.x_parse_args__mutmut_109
+-                        help="Output string length, 0 for no limit")
++                        help="OUTPUT STRING LENGTH, 0 FOR NO LIMIT")
+##### slugify.__main__.x_parse_args__mutmut_113
+-                        help="Truncate to complete word even if length ends up shorter than --max_length")
++                        help=None)
+##### slugify.__main__.x_parse_args__mutmut_116
+-    parser.add_argument("--word-boundary", action='store_true', default=False,
+-                        help="Truncate to complete word even if length ends up shorter than --max_length")
++    parser.add_argument("--word-boundary", action='store_true', help="Truncate to complete word even if length ends up shorter than --max_length")
+##### slugify.__main__.x_parse_args__mutmut_117
+-                        help="Truncate to complete word even if length ends up shorter than --max_length")
++                        )
+##### slugify.__main__.x_parse_args__mutmut_123
+-                        help="Truncate to complete word even if length ends up shorter than --max_length")
++                        help="XXTruncate to complete word even if length ends up shorter than --max_lengthXX")
+##### slugify.__main__.x_parse_args__mutmut_124
+-                        help="Truncate to complete word even if length ends up shorter than --max_length")
++                        help="truncate to complete word even if length ends up shorter than --max_length")
+##### slugify.__main__.x_parse_args__mutmut_125
+-                        help="Truncate to complete word even if length ends up shorter than --max_length")
++                        help="TRUNCATE TO COMPLETE WORD EVEN IF LENGTH ENDS UP SHORTER THAN --MAX_LENGTH")
+##### slugify.__main__.x_parse_args__mutmut_129
+-                        help="When set and --max_length > 0 return whole words in the initial order")
++                        help=None)
+##### slugify.__main__.x_parse_args__mutmut_132
+-    parser.add_argument("--save-order", action='store_true', default=False,
+-                        help="When set and --max_length > 0 return whole words in the initial order")
++    parser.add_argument("--save-order", action='store_true', help="When set and --max_length > 0 return whole words in the initial order")
+##### slugify.__main__.x_parse_args__mutmut_133
+-                        help="When set and --max_length > 0 return whole words in the initial order")
++                        )
+##### slugify.__main__.x_parse_args__mutmut_139
+-                        help="When set and --max_length > 0 return whole words in the initial order")
++                        help="XXWhen set and --max_length > 0 return whole words in the initial orderXX")
+##### slugify.__main__.x_parse_args__mutmut_140
+-                        help="When set and --max_length > 0 return whole words in the initial order")
++                        help="when set and --max_length > 0 return whole words in the initial order")
+##### slugify.__main__.x_parse_args__mutmut_141
+-                        help="When set and --max_length > 0 return whole words in the initial order")
++                        help="WHEN SET AND --MAX_LENGTH > 0 RETURN WHOLE WORDS IN THE INITIAL ORDER")
+##### slugify.__main__.x_parse_args__mutmut_143
+-    parser.add_argument("--separator", type=str, default=DEFAULT_SEPARATOR,
++    parser.add_argument("--separator", type=None, default=DEFAULT_SEPARATOR,
+##### slugify.__main__.x_parse_args__mutmut_145
+-                        help="Separator between words. By default " + DEFAULT_SEPARATOR)
++                        help=None)
+##### slugify.__main__.x_parse_args__mutmut_147
+-    parser.add_argument("--separator", type=str, default=DEFAULT_SEPARATOR,
++    parser.add_argument("--separator", default=DEFAULT_SEPARATOR,
+##### slugify.__main__.x_parse_args__mutmut_149
+-                        help="Separator between words. By default " + DEFAULT_SEPARATOR)
++                        )
+##### slugify.__main__.x_parse_args__mutmut_153
+-                        help="Separator between words. By default " + DEFAULT_SEPARATOR)
++                        help="XXSeparator between words. By default XX" + DEFAULT_SEPARATOR)
+##### slugify.__main__.x_parse_args__mutmut_154
+-                        help="Separator between words. By default " + DEFAULT_SEPARATOR)
++                        help="separator between words. by default " + DEFAULT_SEPARATOR)
+##### slugify.__main__.x_parse_args__mutmut_155
+-                        help="Separator between words. By default " + DEFAULT_SEPARATOR)
++                        help="SEPARATOR BETWEEN WORDS. BY DEFAULT " + DEFAULT_SEPARATOR)
+##### slugify.__main__.x_parse_args__mutmut_158
+-                        help="Words to discount")
++                        help=None)
+##### slugify.__main__.x_parse_args__mutmut_161
+-                        help="Words to discount")
++                        )
+##### slugify.__main__.x_parse_args__mutmut_165
+-                        help="Words to discount")
++                        help="XXWords to discountXX")
+##### slugify.__main__.x_parse_args__mutmut_166
+-                        help="Words to discount")
++                        help="words to discount")
+##### slugify.__main__.x_parse_args__mutmut_167
+-                        help="Words to discount")
++                        help="WORDS TO DISCOUNT")
+##### slugify.__main__.x_parse_args__mutmut_169
+-                        help="Python regex pattern for disallowed characters")
++                        help=None)
+##### slugify.__main__.x_parse_args__mutmut_171
+-                        help="Python regex pattern for disallowed characters")
++                        )
+##### slugify.__main__.x_parse_args__mutmut_174
+-                        help="Python regex pattern for disallowed characters")
++                        help="XXPython regex pattern for disallowed charactersXX")
+##### slugify.__main__.x_parse_args__mutmut_175
+-                        help="Python regex pattern for disallowed characters")
++                        help="python regex pattern for disallowed characters")
+##### slugify.__main__.x_parse_args__mutmut_176
+-                        help="Python regex pattern for disallowed characters")
++                        help="PYTHON REGEX PATTERN FOR DISALLOWED CHARACTERS")
+##### slugify.__main__.x_parse_args__mutmut_181
+-                        help="Activate case sensitivity")
++                        help=None)
+##### slugify.__main__.x_parse_args__mutmut_185
+-    parser.add_argument("--no-lowercase", action='store_false', dest='lowercase', default=True,
+-                        help="Activate case sensitivity")
++    parser.add_argument("--no-lowercase", action='store_false', dest='lowercase', help="Activate case sensitivity")
+##### slugify.__main__.x_parse_args__mutmut_186
+-                        help="Activate case sensitivity")
++                        )
+##### slugify.__main__.x_parse_args__mutmut_194
+-                        help="Activate case sensitivity")
++                        help="XXActivate case sensitivityXX")
+##### slugify.__main__.x_parse_args__mutmut_195
+-                        help="Activate case sensitivity")
++                        help="activate case sensitivity")
+##### slugify.__main__.x_parse_args__mutmut_196
+-                        help="Activate case sensitivity")
++                        help="ACTIVATE CASE SENSITIVITY")
+##### slugify.__main__.x_parse_args__mutmut_199
+-                        help="""Additional replacement rules e.g. "|->or", "%%->percent".""")
++                        help=None)
+##### slugify.__main__.x_parse_args__mutmut_202
+-                        help="""Additional replacement rules e.g. "|->or", "%%->percent".""")
++                        )
+##### slugify.__main__.x_parse_args__mutmut_207
+-    parser.add_argument("--allow-unicode", action='store_true', default=False,
++    parser.add_argument("--allow-unicode", action=None, default=False,
+##### slugify.__main__.x_parse_args__mutmut_209
+-                        help="Allow unicode characters")
++                        help=None)
+##### slugify.__main__.x_parse_args__mutmut_211
+-    parser.add_argument("--allow-unicode", action='store_true', default=False,
++    parser.add_argument("--allow-unicode", default=False,
+##### slugify.__main__.x_parse_args__mutmut_212
+-    parser.add_argument("--allow-unicode", action='store_true', default=False,
+-                        help="Allow unicode characters")
++    parser.add_argument("--allow-unicode", action='store_true', help="Allow unicode characters")
+##### slugify.__main__.x_parse_args__mutmut_213
+-                        help="Allow unicode characters")
++                        )
+##### slugify.__main__.x_parse_args__mutmut_219
+-                        help="Allow unicode characters")
++                        help="XXAllow unicode charactersXX")
+##### slugify.__main__.x_parse_args__mutmut_220
+-                        help="Allow unicode characters")
++                        help="allow unicode characters")
+##### slugify.__main__.x_parse_args__mutmut_221
+-                        help="Allow unicode characters")
++                        help="ALLOW UNICODE CHARACTERS")
+##### slugify.__main__.x_parse_args__mutmut_223
+-    parser.add_argument('--algorithm', choices=('legacy', 'modern'), default=argparse.SUPPRESS,
++    parser.add_argument('--algorithm', choices=None, default=argparse.SUPPRESS,
+##### slugify.__main__.x_parse_args__mutmut_225
+-                        help='Slug algorithm (legacy default; modern explicitly opts into changed output)')
++                        help=None)
+##### slugify.__main__.x_parse_args__mutmut_227
+-    parser.add_argument('--algorithm', choices=('legacy', 'modern'), default=argparse.SUPPRESS,
++    parser.add_argument('--algorithm', default=argparse.SUPPRESS,
+##### slugify.__main__.x_parse_args__mutmut_229
+-                        help='Slug algorithm (legacy default; modern explicitly opts into changed output)')
++                        )
+##### slugify.__main__.x_parse_args__mutmut_236
+-                        help='Slug algorithm (legacy default; modern explicitly opts into changed output)')
++                        help='XXSlug algorithm (legacy default; modern explicitly opts into changed output)XX')
+##### slugify.__main__.x_parse_args__mutmut_237
+-                        help='Slug algorithm (legacy default; modern explicitly opts into changed output)')
++                        help='slug algorithm (legacy default; modern explicitly opts into changed output)')
+##### slugify.__main__.x_parse_args__mutmut_238
+-                        help='Slug algorithm (legacy default; modern explicitly opts into changed output)')
++                        help='SLUG ALGORITHM (LEGACY DEFAULT; MODERN EXPLICITLY OPTS INTO CHANGED OUTPUT)')
+##### slugify.__main__.x_parse_args__mutmut_240
+-    parser.add_argument('--backend', choices=('auto', 'text-unidecode', 'unidecode', 'anyascii'),
++    parser.add_argument('--backend', choices=None,
+##### slugify.__main__.x_parse_args__mutmut_242
+-                        default=argparse.SUPPRESS, help='Transliteration backend (auto preserves legacy preference)')
++                        default=argparse.SUPPRESS, help=None)
+##### slugify.__main__.x_parse_args__mutmut_244
+-    parser.add_argument('--backend', choices=('auto', 'text-unidecode', 'unidecode', 'anyascii'),
+-                        default=argparse.SUPPRESS, help='Transliteration backend (auto preserves legacy preference)')
++    parser.add_argument('--backend', default=argparse.SUPPRESS, help='Transliteration backend (auto preserves legacy preference)')
+##### slugify.__main__.x_parse_args__mutmut_246
+-                        default=argparse.SUPPRESS, help='Transliteration backend (auto preserves legacy preference)')
++                        default=argparse.SUPPRESS, )
+##### slugify.__main__.x_parse_args__mutmut_257
+-                        default=argparse.SUPPRESS, help='Transliteration backend (auto preserves legacy preference)')
++                        default=argparse.SUPPRESS, help='XXTransliteration backend (auto preserves legacy preference)XX')
+##### slugify.__main__.x_parse_args__mutmut_258
+-                        default=argparse.SUPPRESS, help='Transliteration backend (auto preserves legacy preference)')
++                        default=argparse.SUPPRESS, help='transliteration backend (auto preserves legacy preference)')
+##### slugify.__main__.x_parse_args__mutmut_259
+-                        default=argparse.SUPPRESS, help='Transliteration backend (auto preserves legacy preference)')
++                        default=argparse.SUPPRESS, help='TRANSLITERATION BACKEND (AUTO PRESERVES LEGACY PREFERENCE)')
+##### slugify.__main__.x_parse_args__mutmut_261
+-    parser.add_argument('--replacement-stage', choices=('both', 'pre', 'post'), default=argparse.SUPPRESS,
++    parser.add_argument('--replacement-stage', choices=None, default=argparse.SUPPRESS,
+##### slugify.__main__.x_parse_args__mutmut_263
+-                        help='Apply replacement rules before, after, or both sides of cleanup')
++                        help=None)
+##### slugify.__main__.x_parse_args__mutmut_265
+-    parser.add_argument('--replacement-stage', choices=('both', 'pre', 'post'), default=argparse.SUPPRESS,
++    parser.add_argument('--replacement-stage', default=argparse.SUPPRESS,
+##### slugify.__main__.x_parse_args__mutmut_267
+-                        help='Apply replacement rules before, after, or both sides of cleanup')
++                        )
+##### slugify.__main__.x_parse_args__mutmut_276
+-                        help='Apply replacement rules before, after, or both sides of cleanup')
++                        help='XXApply replacement rules before, after, or both sides of cleanupXX')
+##### slugify.__main__.x_parse_args__mutmut_277
+-                        help='Apply replacement rules before, after, or both sides of cleanup')
++                        help='apply replacement rules before, after, or both sides of cleanup')
+##### slugify.__main__.x_parse_args__mutmut_278
+-                        help='Apply replacement rules before, after, or both sides of cleanup')
++                        help='APPLY REPLACEMENT RULES BEFORE, AFTER, OR BOTH SIDES OF CLEANUP')
+##### slugify.__main__.x_parse_args__mutmut_284
+-        parser.error("Input strings and --stdin cannot work together")
++        parser.error("XXInput strings and --stdin cannot work togetherXX")
+##### slugify.__main__.x_parse_args__mutmut_292
+-                parser.error("Replacements must be of the form: ORIGINAL{SEP}REPLACED".format(SEP=SEP))
++                parser.error("XXReplacements must be of the form: ORIGINAL{SEP}REPLACEDXX".format(SEP=SEP))
+##### slugify.__main__.x_parse_args__mutmut_298
+-            return repl.split(SEP, 1)
++            return repl.split(SEP, )
+##### slugify.__main__.x_parse_args__mutmut_299
+-            return repl.split(SEP, 1)
++            return repl.rsplit(SEP, 1)
+##### slugify.__main__.x_parse_args__mutmut_300
+-            return repl.split(SEP, 1)
++            return repl.split(SEP, 2)

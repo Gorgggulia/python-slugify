@@ -1,0 +1,67 @@
+##### slugify._legacy.x_smart_truncate__mutmut_17
+-            if next_len < max_length:
++            if next_len <= max_length:
+##### slugify._legacy.x_slugify__mutmut_23
+-        text = text.decode('utf-8', 'ignore')
++        text = text.decode('UTF-8', 'ignore')
+##### slugify._legacy.x_slugify__mutmut_166
+-    return text.replace(DEFAULT_SEPARATOR, separator) if separator != DEFAULT_SEPARATOR else text
++    return text.replace(DEFAULT_SEPARATOR, separator) if (separator != DEFAULT_SEPARATOR) or True else text
+##### slugify.slugify.x__modern_truncate__mutmut_38
+-            first_word = False
++            first_word = None
+##### slugify.slugify.x__modern_truncate__mutmut_77
+-        if len(word) > remaining:
++        if len(word) >= remaining:
+##### slugify.slugify.x__modern_slugify__mutmut_18
+-        text = text.decode('utf-8', 'ignore')
++        text = text.decode('UTF-8', 'ignore')
+##### slugify.slugify.x__modern_slugify__mutmut_96
+-    text = unicodedata.normalize('NFKC' if allow_unicode else 'NFKD', text)
++    text = unicodedata.normalize('NFKC' if (allow_unicode) or True else 'NFKD', text)
+##### slugify.slugify.x__modern_slugify__mutmut_118
+-    pattern = regex_pattern or (DISALLOWED_UNICODE_CHARS_PATTERN if allow_unicode else DISALLOWED_CHARS_PATTERN)
++    pattern = regex_pattern or (DISALLOWED_UNICODE_CHARS_PATTERN if (allow_unicode) or True else DISALLOWED_CHARS_PATTERN)
+##### slugify.slugify.x_slugify__mutmut_65
+-        separator, save_order, stopwords, regex_pattern, lowercase,
++        separator, save_order, stopwords, None, lowercase,
+##### slugify.__main__.x_parse_args__mutmut_44
+-    parser.add_argument("--no-entities", action='store_false', dest='entities', default=True,
+-                        help="Do not convert HTML entities to unicode")
++    parser.add_argument("--no-entities", action='store_false', dest='entities', help="Do not convert HTML entities to unicode")
+##### slugify.__main__.x_parse_args__mutmut_64
+-    parser.add_argument("--no-decimal", action='store_false', dest='decimal', default=True,
+-                        help="Do not convert HTML decimal to unicode")
++    parser.add_argument("--no-decimal", action='store_false', dest='decimal', help="Do not convert HTML decimal to unicode")
+##### slugify.__main__.x_parse_args__mutmut_84
+-    parser.add_argument("--no-hexadecimal", action='store_false', dest='hexadecimal', default=True,
+-                        help="Do not convert HTML hexadecimal to unicode")
++    parser.add_argument("--no-hexadecimal", action='store_false', dest='hexadecimal', help="Do not convert HTML hexadecimal to unicode")
+##### slugify.__main__.x_parse_args__mutmut_116
+-    parser.add_argument("--word-boundary", action='store_true', default=False,
+-                        help="Truncate to complete word even if length ends up shorter than --max_length")
++    parser.add_argument("--word-boundary", action='store_true', help="Truncate to complete word even if length ends up shorter than --max_length")
+##### slugify.__main__.x_parse_args__mutmut_132
+-    parser.add_argument("--save-order", action='store_true', default=False,
+-                        help="When set and --max_length > 0 return whole words in the initial order")
++    parser.add_argument("--save-order", action='store_true', help="When set and --max_length > 0 return whole words in the initial order")
+##### slugify.__main__.x_parse_args__mutmut_143
+-    parser.add_argument("--separator", type=str, default=DEFAULT_SEPARATOR,
++    parser.add_argument("--separator", type=None, default=DEFAULT_SEPARATOR,
+##### slugify.__main__.x_parse_args__mutmut_147
+-    parser.add_argument("--separator", type=str, default=DEFAULT_SEPARATOR,
++    parser.add_argument("--separator", default=DEFAULT_SEPARATOR,
+##### slugify.__main__.x_parse_args__mutmut_185
+-    parser.add_argument("--no-lowercase", action='store_false', dest='lowercase', default=True,
+-                        help="Activate case sensitivity")
++    parser.add_argument("--no-lowercase", action='store_false', dest='lowercase', help="Activate case sensitivity")
+##### slugify.__main__.x_parse_args__mutmut_212
+-    parser.add_argument("--allow-unicode", action='store_true', default=False,
+-                        help="Allow unicode characters")
++    parser.add_argument("--allow-unicode", action='store_true', help="Allow unicode characters")
+##### slugify.__main__.x_parse_args__mutmut_284
+-        parser.error("Input strings and --stdin cannot work together")
++        parser.error("XXInput strings and --stdin cannot work togetherXX")
+##### slugify.__main__.x_parse_args__mutmut_292
+-                parser.error("Replacements must be of the form: ORIGINAL{SEP}REPLACED".format(SEP=SEP))
++                parser.error("XXReplacements must be of the form: ORIGINAL{SEP}REPLACEDXX".format(SEP=SEP))
